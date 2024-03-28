@@ -6,6 +6,6 @@ services:
        - environment/dev.env
      build:
        context: ../
-       dockerfile: Dockerfile
+       dockerfile: docker/Dockerfile
      ports:
        - 8081:80
