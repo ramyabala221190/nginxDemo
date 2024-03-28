@@ -4,6 +4,8 @@ services:
      image: testing-nginx
      env_file: 
        - environment/${environment}.env
+     environment:
+       - env=${environment}
      build:
        context: ../
        dockerfile: docker/Dockerfile
