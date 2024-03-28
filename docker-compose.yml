@@ -1,0 +1,11 @@
+services:
+   nginx-demo:
+     container_name: testing-nginx-container
+     image: testing-nginx
+     env_file: 
+       - ./${env.environment}.env
+     build:
+       context: .
+       dockerfile: Dockerfile
+     ports:
+       - 8081:80
