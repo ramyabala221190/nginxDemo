@@ -3,7 +3,7 @@ services:
      container_name: testing-nginx-container
      image: testing-nginx
      env_file: 
-       - environment/$${environment}.env
+       - ./environment/dev.env
      build:
        context: .
        dockerfile: Dockerfile
