@@ -3,9 +3,9 @@ services:
      container_name: testing-nginx-container
      image: testing-nginx
      env_file: 
-       - ./environment/dev.env
+       - docker/environment/dev.env
      build:
-       context: .
-       dockerfile: Dockerfile
+       context: ../
+       dockerfile: docker/Dockerfile
      ports:
        - 8081:80
